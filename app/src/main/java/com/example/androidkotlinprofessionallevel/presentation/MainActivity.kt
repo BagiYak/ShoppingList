@@ -20,9 +20,10 @@ class MainActivity : AppCompatActivity() {
             //TODO("delete - used for test")
             if(count == 0) {
                 count++
-                val item = it[0]
-//                viewModel.deleteShopItem(item)
-                viewModel.changeEnabledState(item)
+                val item5 = it[5]
+                val item6 = it[6]
+                viewModel.deleteShopItem(item5)
+                viewModel.changeEnabledState(item6)
             }
         }
     }
