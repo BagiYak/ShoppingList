@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Shopping List</string>
-    <string name="android_professional_level_kotlin">Android Professional Level (Kotlin)!</string>
+    <string name="add_shop_item_content_description">Add new shop item</string>
 </resources>
