@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.example.androidkotlinprofessionallevel.domain.ShopItem
 import com.example.androidkotlinprofessionallevel.domain.ShopListRepository
+import kotlin.random.Random
 
 object ShopListRepositoryImpl : ShopListRepository {
 
@@ -14,12 +15,12 @@ object ShopListRepositoryImpl : ShopListRepository {
     private var autoIncrementId = 0
 
     init {
-        for (i in 0 until 10) {
+        for (i in 0 until 1000) {
             addShopItem(
                 ShopItem(
                     name = "Name $i",
                     count = i,
-                    enabled = true,
+                    enabled = Random.nextBoolean(),
                 )
             )
         }
