@@ -1,6 +1,5 @@
 package com.example.androidkotlinprofessionallevel.presentation
 
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.androidkotlinprofessionallevel.data.ShopListRepositoryImpl
 import com.example.androidkotlinprofessionallevel.domain.DeleteShopItemUseCase
@@ -22,9 +21,9 @@ class MainViewModel : ViewModel() {
         deleteShopItemUseCase.deleteShopItem(shopItem)
     }
 
-    fun changeEnabledState(shopItem: ShopItem) {
-        val item = shopItem.copy(enabled = !shopItem.enabled)
-        editShopItemUseCase.editShopItem(item)
+    fun changeEnableState(shopItem: ShopItem) {
+        val newItem = shopItem.copy(enabled = !shopItem.enabled)
+        editShopItemUseCase.editShopItem(newItem)
     }
 
 }
